@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Open in App Mode",
+    "version": "1.0",
+    "description": "Opens the current page in app mode using a shortcut",
+    "permissions": ["tabs", "windows"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "commands": {
+      "open-popup-mode": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+P"
+        },
+        "description": "Open current page in popup window"
+      }
+    }
+  }
+  
